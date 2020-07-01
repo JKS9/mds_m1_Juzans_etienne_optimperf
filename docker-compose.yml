@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  mongo_set_1:
+    container_name: mongo_set_1
+    image: mongo
+    command: mongod --replSet mongo-cluster-dev
+    ports:
+      - 27018:27017
+    networks:
+      - mongo-cluster-dev
+
+  mongo_set_2:
+    container_name: mongo_set_2
+    image: mongo
+    command: mongod --replSet mongo-cluster-dev
+    ports:
+      - 27019:27017
+    networks:
+      - mongo-cluster-dev
+
+  mongo_set_3:
+    container_name: mongo_set_3
+    image: mongo
+    command: mongod --replSet mongo-cluster-dev
+    ports:
+      - 27020:27017
+    networks:
+      - mongo-cluster-dev
+
+networks:
+  mongo-cluster-dev:
