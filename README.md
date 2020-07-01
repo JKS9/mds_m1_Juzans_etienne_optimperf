@@ -9,8 +9,6 @@ Optimisation et performance
 ### Schéma architecture REST API avec un cluster mongoDB Atlas
 ![alt text](https://github.com/JKS9/mds_m1_Juzans_etienne_optimperf/blob/master/schema_cluster_MongoDB.png)
 
-Un cluster est un ensemble de machine, qui peuvent être par exemple des réplicaSets c'est à dire des réplications de données. Par exemple dans ce schéma vous pouvez voir un primary et deux secondary qui sont des réplications de données de la primary. L'avantage de ce système, c'est d'avoir une sécurité, une sorte de back-up par exemple lorsque que la base de donnée primary tombe, une secondary le remplacera d'aussitôt, cela permet de maintenir une continuité de donnée en toute fiabilité.
-
 ### Etape 1 : La configuration du cluster de mongoDB Atlas :
 1) Tout d'abord, il faut se créer un compte mongoDB Atlas.
 2) Créer un projet.
