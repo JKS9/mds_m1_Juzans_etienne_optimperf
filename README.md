@@ -66,7 +66,7 @@ networks:
 Une fois que les conteneurs instanciée, je vais me connecter au conteneur mongo1
 
 ```sh
-docker exec -it mongo1 mongo
+docker exec -it mongo_set_1 mongo
 ```
 Une fois dans le shell,  je dois définir la configuration pour le lancement du replica set.
 ```sh
