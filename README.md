@@ -86,7 +86,7 @@ Puis :
 rs.initiate(config);
 ```
 
-### Etape 2 : run le projet
+### Etape 3 : run le projet
  
 ```sh
 cd backend
